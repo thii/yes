@@ -4,7 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "yes",
-    dependencies: [],
+    products: [
+        .executable(name: "yes", targets: ["yes"]),
+    ],
     targets: [
         .target(
             name: "yes",
